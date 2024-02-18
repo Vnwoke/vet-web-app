@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body>
+    <%- include('../partials/navbar'); %>
+    <div class="container">
+        <h1 class="text-center">Contact US</h1>
+
+        <div class="row">
+            <div class="col offset-md-2 col-md-8">
+                <div class="card mb-3" >
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                        <img src="https://placehold.co/300x150" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../partials/footer'); %>
+</body>
+</html>
